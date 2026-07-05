@@ -34,6 +34,10 @@ public class MemberRepository {
         return new ArrayList<>(store.values());
     }
 
+    public Member findById(Long id) {
+        return store.get(id);
+    }
+
     public void clearStore() {
         store.clear();
 
