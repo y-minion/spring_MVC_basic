@@ -1,10 +1,11 @@
-<%@ page import="hello.servlet.domain.member.MemberRepository" %>
+3<%@ page import="hello.servlet.domain.member.MemberRepository" %>
 <%@ page import="hello.servlet.domain.member.Member" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
 
 //    request, response 사용 가능(자동으로 제공해준다) -> jsp가 자동으로 서블릿을 지원해준다.
+//해당 jsp는 극 초기 버전이다. 현재 파일은 MVC가 분리되어 있는게 아니라 하나의 jsp에 뷰와 BE코드가 섞여 있다.
     MemberRepository memberRepository = MemberRepository.getInstance();
     System.out.println("save.jsp");
     String username = request.getParameter("username");
